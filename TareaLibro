@@ -1,6 +1,50 @@
-public class TareaLibro{
+public class TareaLibro{  
     public static void main(String[] args){
-        String texto = "Hola soy HR";
-        System.out.println(texto);
+        String s = "Hola";
+        String s1 = "";
+        String s2 = "Hola";
+        String s3 = "Hola, como estas?";
+        String s4 = "1234";
+        //length
+        int x = s.length();
+        System.out.println("El tamaño del texto es:"+x );
+        //isEmpty
+        boolean b1 = s.isEmpty();
+        System.out.println("El texto 1 esta vacio?: "+b1);
+        boolean b2 = s1.isEmpty();
+        System.out.println("El texto 2 esta vacio?: "+b2);
+        //equals
+        if(s.equals(s2)){
+        System.out.println("SI pasa por aqui ");
+        }
+        //indexOf
+        int p1 = s3.indexOf("a");
+        System.out.println("El lugar en donde se escuentra la primera 'a' es en: "+p1);
+        //lastIndexOf
+        int p2 = s3.lastIndexOf("a");
+        System.out.println("El lugar en donde se escuentra la ultima 'a' es en: "+p2);
+        //toUpperCase
+        String d = s3.toUpperCase();
+        System.out.println("El texto en mayusculas es: "+d);
+        //tolowerCase
+        String d1 = s3.toLowerCase();
+        System.out.println("El texto en minúsculas es: "+d1);
+        //substring//////////
+        String f = s3.substring(0, 4);
+        String f1 = s3.substring(6, 10);
+        String f2 = s3.substring(11);
+        System.out.println("Las subcadenas seleccionadas son: "+f +f1 +f2);
+        //parseInt y toString
+        int i = Integer.parseInt(s4);
+        String t1 = Integer.toString(i);
+        System.out.println("El número en parseint es: "+i);
+        System.out.println("El número en tostring es: " + t1);
+        
+        //Para StringBuilder
+        StringBuilder sb = new StringBuilder();
+        sb.append("Hola, ");
+        sb.append("Chau");
+        System.out.println(sb);
     }
+
 }
