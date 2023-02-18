@@ -1,8 +1,0 @@
-public class PaginasLibro{
-    public static void main(String[] args){
-        String texto = "Hola Mundo";
-        System.out.println(texto);
-        int longitud = texto.length();
-        System.out.println("El tamaño del texto es:"+longitud );
-    }
-}
