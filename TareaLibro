@@ -35,7 +35,7 @@ public class TareaLibro{
        
         //tolowerCase
         String d1 = s3.toLowerCase();
-        System.out.println("El texto en minúsculas es: "+d1);
+        System.out.println("El texto en minusculas es: "+d1);
        
         //substring
         String f = s3.substring(0, 4);
@@ -46,8 +46,8 @@ public class TareaLibro{
         //parseInt y toString
         int i = Integer.parseInt(s4);
         String t1 = Integer.toString(i);
-        System.out.println("El número en parseint es: "+i);
-        System.out.println("El número en tostring es: " + t1);
+        System.out.println("El numero en parseint es: "+i);
+        System.out.println("El numero en tostring es: " + t1);
         
         //Para StringBuilder
         StringBuilder sb = new StringBuilder();
