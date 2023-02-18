@@ -1,1 +1,6 @@
-
+public class TareaLibro{
+    public static void main(String[] args){
+        String texto = "Hola soy HR";
+        System.out.println(texto);
+    }
+}
