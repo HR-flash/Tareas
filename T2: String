@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class Tarea2{
     public static void main(String[] args){
+        Scanner datos = new Scanner (System.in);
+        System.out.println("Ingresa tu nombre, profesion y nacionalidad")
 
     }
 }
