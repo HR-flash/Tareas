@@ -3,7 +3,7 @@ public class Tarea2{
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa tu nombre, profesión y nacionalidad separados por espacios sin comas: ");
+        System.out.println("Ingresa tu primer nombre, profesión y nacionalidad separados por espacios sin comas: ");
         String input = scanner.nextLine();
 
         String[] nombres = input.split(" ");
