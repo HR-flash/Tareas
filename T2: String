@@ -11,9 +11,13 @@ public class Tarea2{
         String profesion = nombres[1];
         String nacionalidad = nombres[2];
 
-        System.out.println("Nombre: "+nombre);
-        System.out.println("Profesión: "+profesion);
-        System.out.println("Nacionalidad: "+nacionalidad);
+        String a = nombre.toUpperCase();
+        String b = profesion.toUpperCase();
+        String c = nacionalidad.toUpperCase();
+
+        System.out.println("Nombre: "+a);
+        System.out.println("Profesión: "+b);
+        System.out.println("Nacionalidad: "+c);
     }
 }
 //Intente hacerlo de la manera vista en clase, pero no me funcionaba el codigo dado que decia que el metodo nextLine estaba indefinido por el tipo Scanner
