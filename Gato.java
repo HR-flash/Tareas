@@ -9,6 +9,5 @@ public class Gato {
         System.out.println(linea + "   " + linea);
         System.out.println(lh);
         
-        
     }
 }
