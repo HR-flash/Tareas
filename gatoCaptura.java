@@ -10,9 +10,19 @@ public class gatoCaptura {
         String cadena = scanner.nextLine();
         String linea = "|";
         String lh = "-----";
+
+
+        //IF PARA LIMITAR LA CANTIDAD DE CARACTERES
+        if (cadena.length() != 9) {
+            System.out.println("La cadena debe tener exactamente nueve caracteres.");
+        } else {
+            System.out.println("La cadena ingresada es: " + cadena);
+        }
+
         System.out.println("\n"+cadena);
 
-        //CAPTURA DE LOS DAROS
+
+        // CAPTURA DE LOS DATOS
         char[][] tablero = {
             {cadena.charAt(0), cadena.charAt(1), cadena.charAt(2)},
             {cadena.charAt(3), cadena.charAt(4), cadena.charAt(5)},
