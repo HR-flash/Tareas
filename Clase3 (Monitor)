@@ -1,1 +1,56 @@
+import java.awt.*;
+import java.util.*;
+import java.util.ArrayList;
+public class Monitor {
+    private double pulgadas;
+    private String marca;
+    private double precio;
+
+    public Monitor() {
+    }
+
+    public Monitor(double pulgadas, String marca, double precio) {
+        this.pulgadas = pulgadas;
+        this.marca = marca;
+        this.precio = precio;
+    }
+
+    public double getPulgadas() {
+        return pulgadas;
+    }
+
+    public void setPulgadas(double pulgadas) {
+        this.pulgadas = pulgadas;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Monitor{" +
+                "pulgadas=" + pulgadas +
+                ", marca='" + marca + '\'' +
+                ", precio=" + precio +
+                '}';
+    }
+
+    public static void main(String[] args) {
+        Monitor mon = new Monitor(15.9,"Lenovo",1499.99);
+        System.out.println(mon);
+    }
+}
 
