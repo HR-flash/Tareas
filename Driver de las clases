@@ -1,1 +1,34 @@
+import java.awt.*;
+
+public class Driver {
+    public static void main(String[] args) {
+
+        //Automovil
+        Automovil auto1 = new Automovil();
+        auto1.setMarca("Tesla");
+        auto1.setColor(Color.CYAN);
+        System.out.println(auto1);
+
+        //Persona
+
+        Persona per1 = new Persona();
+        per1.setGenero("MASCULINO");
+        per1.setEdad(20);
+        System.out.println(per1);
+
+        //Monitor
+
+        Monitor mon1 = new Monitor();
+        mon1.setPulgadas(15.5);
+        mon1.setMarca("Lenovo");
+        System.out.println(mon1);
+
+
+        //Televisor
+
+        Televisor tele1 = new Televisor();
+        tele1.setMarca("Samsung");
+        System.out.println(tele1);
+    }
+}
 
