@@ -1,1 +1,54 @@
+import java.awt.*;
+import java.util.*;
+public class Televisor {
+    private String marca;
+    private int pulgadas;
+    private double precio;
 
+    public Televisor() {
+    }
+
+    public Televisor(String marca, int pulgadas, double precio) {
+        this.marca = marca;
+        this.pulgadas = pulgadas;
+        this.precio = precio;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getPulgadas() {
+        return pulgadas;
+    }
+
+    public void setPulgadas(int pulgadas) {
+        this.pulgadas = pulgadas;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Televisor{" +
+                "marca='" + marca + '\'' +
+                ", pulgadas=" + pulgadas +
+                ", precio=" + precio +
+                '}';
+    }
+
+    public static void main(String[] args) {
+        Televisor tele = new Televisor("Samsung",55,10999.99);
+        System.out.println(tele);
+    }
+}
