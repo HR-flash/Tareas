@@ -1,1 +1,60 @@
+import java.awt.*;
+import java.util.*;
+import java.util.ArrayList;
+public class Persona {
+    private String genero;
+    private int edad;
+    private double peso;
+
+    public Persona() {
+    }
+
+    public Persona(String genero, int edad, double peso) {
+        this.genero = genero;
+        this.edad = edad;
+        this.peso = peso;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "genero='" + genero + '\'' +
+                ", edad=" + edad +
+                ", peso=" + peso +
+                '}';
+    }
+
+    public static void main(String[] args) {
+        Persona per = new Persona("Masculino",18,75.8);
+        System.out.println(per);
+    }
+    public void Comer(){
+        System.out.println("Comiendo..");
+    }
+}
 
