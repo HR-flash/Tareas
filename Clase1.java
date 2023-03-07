@@ -16,25 +16,13 @@ public class Automovil {
         this.modelo = modelo;
         this.color = color;
     }
-    public Automovil(Color color){
-        this.color = color;
-    }
+
     public String getMarca() {
         return marca;
     }
 
-    public void setMarca(String m) {
-        ArrayList<String> marcas = new ArrayList<>();
-        marcas.add("VW");
-        marcas.add("Nissan");
-        marcas.add("Chevrolet");
-        marcas.add("Tesla");
-        marcas.add("Honda");
-        if(marcas.contains(m.toUpperCase())){
-            this.marca = m;
-        }else{
-            System.out.println("Esa marca no existe");
-        }
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
     public String getSubMarca() {
@@ -60,6 +48,8 @@ public class Automovil {
     public void setColor(Color color) {
         this.color = color;
     }
+
+
 //Inicia ToString
     @Override
     public String toString() {
