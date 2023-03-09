@@ -1,1 +1,59 @@
+public class Libro {
+    private int pagina;
+    private int publicacion;
+    private String tipo;
+    private String nombre;
+
+    public Libro() {
+    }
+
+    public Libro(int pagina, int publicacion, String tipo, String nombre) {
+        this.pagina = pagina;
+        this.publicacion = publicacion;
+        this.tipo = tipo;
+        this.nombre = nombre;
+    }
+
+    public int getPagina() {
+        return pagina;
+    }
+
+    public void setPagina(int pagina) {
+        this.pagina = pagina;
+    }
+
+    public int getPublicacion() {
+        return publicacion;
+    }
+
+    public void setPublicacion(int publicacion) {
+        this.publicacion = publicacion;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "pagina=" + pagina +
+                ", publicacion=" + publicacion +
+                ", tipo='" + tipo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
+}
 
