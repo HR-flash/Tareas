@@ -1,1 +1,49 @@
+import java.awt.*;
 
+public class Giroscopio {
+    private double velocidad;
+    private Color color;
+    private int tamaño;
+
+    public Giroscopio() {
+    }
+
+    public Giroscopio(double velocidad, Color color, int tamaño) {
+        this.velocidad = velocidad;
+        this.color = color;
+        this.tamaño = tamaño;
+    }
+
+    public double getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(double velocidad) {
+        this.velocidad = velocidad;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public int getTamaño() {
+        return tamaño;
+    }
+
+    public void setTamaño(int tamaño) {
+        this.tamaño = tamaño;
+    }
+
+    @Override
+    public String toString() {
+        return "Giroscopio{" +
+                "velocidad=" + velocidad +
+                ", color=" + color +
+                ", tamaño=" + tamaño + "cm"+
+                '}';
+    }
+}
