@@ -1,1 +1,71 @@
+public class Lampara {
+    private int intensidad;
+    private String tipo;
+    private String marca;
+    private boolean encendida;
 
+    public Lampara() {
+    }
+
+    public Lampara(int intensidad, String tipo, String marca, boolean encendida) {
+        this.intensidad = intensidad;
+        this.tipo = tipo;
+        this.marca = marca;
+        this.encendida = encendida;
+    }
+
+    public int getIntensidad() {
+        return intensidad;
+    }
+
+    public void setIntensidad(int intensidad) {
+        this.intensidad = intensidad;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public boolean isEncendida() {
+        return encendida;
+    }
+
+    public void setEncendida(boolean encendida) {
+        this.encendida = encendida;
+    }
+
+    @Override
+    public String toString() {
+        String estado;
+        if (encendida) {
+            estado = "encendida";
+        } else {
+            estado = "apagada";
+        }
+        return "Lampara{" +
+                "intensidad=" + intensidad +
+                ", tipo='" + tipo + '\'' +
+                ", marca='" + marca + '\'' +
+                ", encendida=" + encendida +
+                '}';
+    }
+    public void encender(){
+        encendida = true;
+    }
+    public void apagar(){
+        encendida = false;
+    }
+    
+}
