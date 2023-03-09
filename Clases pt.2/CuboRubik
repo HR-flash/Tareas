@@ -1,1 +1,49 @@
+import java.awt.*;
 
+public class CuboRubik {
+    private int cara;
+    private Color color;
+    private String tipo;
+
+    public CuboRubik() {
+    }
+
+    public CuboRubik(int cara, Color color, String tipo) {
+        this.cara = cara;
+        this.color = color;
+        this.tipo = tipo;
+    }
+
+    public int getCara() {
+        return cara;
+    }
+
+    public void setCara(int cara) {
+        this.cara = cara;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    @Override
+    public String toString() {
+        return "CuboRubik{" +
+                "cara=" + cara +
+                ", color=" + color +
+                ", tipo='" + tipo + '\'' +
+                '}';
+    }
+}
