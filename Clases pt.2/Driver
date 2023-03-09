@@ -1,1 +1,43 @@
+import java.awt.*;
 
+public class Driver {
+    public static void main(String[] args) {
+        ///LAMPARA
+        Lampara lam = new Lampara(50, "LED", "PHILLIPS", false);
+        System.out.println("lámpara: ");
+        System.out.println(lam.toString());
+
+        lam.encender();
+        System.out.println("\nEncendiendo la lámpara...");
+        System.out.println(lam.toString());
+
+        ///PAIS
+        Pais mexico =new Pais("México",126700000,1964375);
+        System.out.println("\n"+mexico);
+
+        //COMPUTADORA
+        Computadora compu= new Computadora(1550.99,"HP",16);
+        System.out.println("\n"+compu);
+
+        //LIBRO
+        Libro lib = new Libro(15,2015,"Terror","IT");
+        System.out.println("\n"+lib);
+
+        //BALON
+        Balon pelota = new Balon(150,15.5,"Balon de plastico");
+        System.out.println("\n"+pelota);
+
+        //GATO
+        Gato cat = new Gato("Garfield",10,"Siberiano", Color.GRAY);
+        System.out.println("\n"+cat);
+
+        //CUBO RUBIK
+        CuboRubik cubo = new CuboRubik(2,Color.RED,"3x3");
+        System.out.println("\n"+cubo);
+
+        //GIROSCOPIO
+        Giroscopio giro = new Giroscopio(13,Color.gray,15);
+        System.out.println("\n"+giro);
+
+    }
+}
