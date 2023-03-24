@@ -1,1 +1,114 @@
+{
+    private static final int Agua = 5000;
+    private static final int Cafe = 1000;
+    private static final int Crema = 1500;
+    private static final int Vasos = 50;
+    private static final int capVasos = 200;
+    private int cantAgua;
+    private int cantCafe;
+    private int cantCrema;
+    private int cantVasos;
 
+    public MaquinaCafe() {
+    }
+
+    public MaquinaCafe(int Agua, int Cafe, int Crema, int Vasos) {
+        this.cantAgua = Agua;
+        this.cantCafe = Cafe;
+        this.cantCrema = Crema;
+        this.cantVasos = Vasos;
+    }
+
+    public int getCantAgua() {
+        return cantAgua;
+    }
+
+    public void setCantAgua(int cantAgua) {
+        this.cantAgua = cantAgua;
+    }
+
+    public int getCantCafe() {
+        return cantCafe;
+    }
+
+    public void setCantCafe(int cantCafe) {
+        this.cantCafe = cantCafe;
+    }
+
+    public int getCantCrema() {
+        return cantCrema;
+    }
+
+    public void setCantCrema(int cantCrema) {
+        this.cantCrema = cantCrema;
+    }
+
+    public int getCantVasos() {
+        return cantVasos;
+    }
+
+    public void setCantVasos(int cantVasos) {
+        this.cantVasos = cantVasos;
+    }
+
+    @Override
+    public String toString() {
+        return "MaquinaCafe{" +
+                "cantAgua=" + Agua +
+                ", cantCafe=" + Cafe +
+                ", cantCrema=" + Crema +
+                ", cantVasos=" + Vasos +
+                '}';
+    }
+    public boolean ServirAmericano(){
+        return cantAgua >= 180 && cantCafe >= 15 && cantVasos > 0;
+    }
+    public boolean ServirExpreso(){
+        return cantAgua >= 120 && cantCafe >= 20 && cantVasos > 0;
+    }
+    public boolean ServirCapuchino(){
+        return cantAgua >= 100 && cantCafe >= 14 && cantCrema >= 70 && cantVasos > 0;
+    }
+    
+    public void sirviendoAmericano(){
+        if (ServirAmericano()){
+            cantAgua -= 180; cantCafe -= 15; cantVasos--;
+            System.out.println("Cafe Americano servido :)");
+        }else{
+            System.out.println("No se hay suficientes materiales para el cafe");
+        }
+    }
+
+    public void sirviendoExpreso(){
+        if (ServirExpreso()){
+            cantAgua -= 120; cantCafe -= 20; cantVasos--;
+            System.out.println("Cafe Expreso servido :)");
+        }else{
+            System.out.println("No se hay suficientes materiales para el cafe");
+        }
+    }
+
+    public void sirviendoCapuchino(){
+        if (ServirCapuchino()){
+            cantAgua -= 100; cantCafe -= 14; cantCrema -=70; cantVasos--;
+            System.out.println("Cafe Capuchino servido :)");
+        }else{
+            System.out.println("No se hay suficientes materiales para el cafe");
+        }
+    }
+
+    public void Cantidades(){
+        System.out.println("Cantidad de Agua:"+cantAgua+"ml");
+        System.out.println("Cantidad de Cafe:"+cantCafe+"gr");
+        System.out.println("Cantidad de Crema:"+cantCrema+"ml");
+        System.out.println("Cantidad de Vasos:"+cantVasos);
+    }
+
+
+
+
+
+
+
+
+}
