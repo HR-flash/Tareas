@@ -1,0 +1,63 @@
+import java.util.Scanner;
+public class DriverCafe {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        MaquinaCafe maquina = new MaquinaCafe();
+        System.out.println("\n"+maquina);
+        System.out.println("\nBienvenido a la cafeteria de 'HR ENTERPRICES'");
+
+        while (true){
+            System.out.println("Ingrese el cafe que desea 'Americano', 'Expreso', 'Capuchino' (Con la primera letra mayuscula): ");
+            String cafe = scanner.nextLine();
+
+            switch (cafe){
+
+                    //Americano
+                case "Americano":
+                    if (maquina.ServirAmericano()){
+                        System.out.println("Americano servido");
+                    }else{
+                        System.out.println("Ya no tengo los suficientes materiales para hacer el Americano");
+                    }
+                    break;
+
+
+                    //Expreso
+                case "Expreso":
+                    if (maquina.ServirExpreso()){
+                        System.out.println("Expreso servido");
+                    }else{
+                        System.out.println("Ya no tengo los suficientes materiales para hacer el Expreso");
+                    }
+                    break;
+
+
+                    //Capuchino
+                case "Capuchino":
+                    if (maquina.ServirCapuchino()){
+                        System.out.println("Capuchino servido");
+                    }else{
+                        System.out.println("Ya no tengo los suficientes materiales para hacer el Capuchino");
+                    }
+                    break;
+
+                default:
+                    System.out.println("No tengo de ese tipo de cafe, seleccione uno del menu: 'Americano','Expreso' o 'Capuchino'");
+                    break;
+
+
+            }//switch
+
+            System.out.println("\n CANTIDADES RESTANTES DE LOS INGREDIENTES:");
+            maquina.Cantidades();
+
+            System.out.println("Deseas pedir otro cafe?? (si/no)");
+            String respuesta = scanner.nextLine();
+            if (respuesta.equals("no")){
+                break;
+            }
+        }//while
+
+        System.out.println("Adios XD");
+    }
+}
