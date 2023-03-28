@@ -42,9 +42,8 @@ public class DriverCafe {
                     break;
 
                 default:
-                    System.out.println("No tengo de ese tipo de cafe, seleccione uno del menu: 'Americano','Expreso' o 'Capuchino'");
+                    System.out.println("No tengo de ese tipo de cafe, selccione uno del menu: 'Americano','Expreso' o 'Capuchino'");
                     break;
-
 
             }//switch
 
@@ -56,8 +55,16 @@ public class DriverCafe {
             if (respuesta.equals("no")){
                 break;
             }
+
+            if(maquina.Vacio()){
+                System.out.println("YA NO TENGO LOS MATERIALES NECESARIOS PARA EL CAFE");
+                System.out.println("Estos son los ingredientes restantes:\n");
+                maquina.Cantidades();
+                break;
+            }
+
         }//while
 
-        System.out.println("Adios XD");
+        System.out.println("\nAdios XD");
     }
 }
