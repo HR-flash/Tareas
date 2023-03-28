@@ -105,6 +105,10 @@ public class MaquinaCafe {
         System.out.println("Cantidad de Vasos:"+cantVasos);
     }
 
-
-
+    public boolean Vacio() {
+        if (cantVasos <= 0) {
+            return true;
+        }
+        return false;
+    }
 }
