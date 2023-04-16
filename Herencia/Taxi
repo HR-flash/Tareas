@@ -1,1 +1,73 @@
+import java.awt.*;
 
+public class Taxi extends Automovil{
+    private String zona;
+    private boolean disponible;
+    private String nomConductor;
+
+    public Taxi() {
+    }
+
+    public Taxi(int numpuertas, String tipoCombustible, double rodadaLlantas, String marca, int modelo, Color color, String zona, boolean disponible, String nomConductor) {
+        super(numpuertas, tipoCombustible, rodadaLlantas, marca, modelo, color);
+        this.zona = zona;
+        this.disponible = disponible;
+        this.nomConductor = nomConductor;
+    }
+
+    public String getZona() {
+        return zona;
+    }
+
+    public void setZona(String zona) {
+        this.zona = zona;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+
+    public String getNomConductor() {
+        return nomConductor;
+    }
+
+    public void setNomConductor(String nomConductor) {
+        this.nomConductor = nomConductor;
+    }
+
+    @Override
+    public String toString() {
+        return "Taxi{" +
+                "zona='" + zona + '\'' +
+                ", disponible=" + disponible +
+                ", nomConductor='" + nomConductor + '\'' +
+                ", marca='" + marca + '\'' +
+                ", modelo=" + modelo +
+                ", color=" + color +
+                ", numpuertas=" + numpuertas +
+                ", tipoCombustible='" + tipoCombustible + '\'' +
+                ", rodadaLlantas=" + rodadaLlantas +
+                '}';
+    }
+
+    public boolean Disponibilidad(){
+        boolean dispo = false;
+        double num = Math.random();
+        num = (double) (Math.random()*11);
+        if (num <= 5){
+            dispo = true;
+            System.out.println("El taxi esta disponible");
+        }else{
+            System.out.println("Pero el taxi no esta disponible");
+        }
+        return true;
+    }
+    public void Tarifa(){
+        int tar = (int) (Math.random()*101);
+        System.out.println("La tarifa sera al lugar que quiere ir es de "+tar+" pesos mexicanos");
+    }
+}
