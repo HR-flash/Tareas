@@ -25,7 +25,7 @@ public class Vehiculo {
     }
 
     public void setTipoCombustible(String tipoCombustible) {
-        this.tipoCombustible = tipoCombustible;
+       this.tipoCombustible = tipoCombustible;
     }
 
     public double getRodadaLlantas() {
