@@ -1,0 +1,67 @@
+import java.awt.*;
+
+public class Automovil extends Vehiculo {
+    protected String marca;
+    protected int modelo;
+    protected Color color;
+
+    public Automovil() {
+    }
+
+    public Automovil(int numpuertas, String tipoCombustible, double rodadaLlantas, String marca, int modelo, Color color) {
+        super(numpuertas, tipoCombustible, rodadaLlantas);
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(int modelo) {
+        this.modelo = modelo;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Automovil{" +
+                "marca='" + marca + '\'' +
+                ", modelo=" + modelo +
+                ", color=" + color +
+                ", numpuertas=" + numpuertas +
+                ", tipoCombustible='" + tipoCombustible + '\'' +
+                ", rodadaLlantas=" + rodadaLlantas +
+                '}';
+    }
+
+    public void porcentCombus(){
+        int combustible = (int) (Math.random()*101);
+        System.out.println("El nivel de combustible es de " +combustible+ "%");
+    }
+    public void acelerar() {
+        double velocidad = (double) (Math.random()*2);
+        if (velocidad > 0) {
+            System.out.println("El vehículo esta acelerando ");
+        } else {
+            System.out.println("El vehiculo no esta acelerando");
+        }
+    }
+
+}
