@@ -57,7 +57,7 @@ public class Automovil extends Vehiculo {
     }
     public void acelerar() {
         double velocidad = (double) (Math.random()*2);
-        if (velocidad > 0) {
+        if (velocidad > 1) {
             System.out.println("El vehículo esta acelerando ");
         } else {
             System.out.println("El vehiculo no esta acelerando");
