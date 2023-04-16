@@ -25,6 +25,12 @@ public class DriverHerencia {
 
         //TAXI
         System.out.println("\n--------------------------TAXI--------------------------");
+        Taxi tax = new Taxi(4,"Premiun",19.5,"Volkswagen",2023,Color.YELLOW,"CDMX",true,"jose");
+        System.out.println(tax);
+        tax.Tarifa();
+        tax.Disponibilidad();
+
+
 
     }
 }
