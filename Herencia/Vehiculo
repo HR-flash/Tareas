@@ -1,0 +1,60 @@
+public class Vehiculo {
+    protected int numpuertas;
+    protected String tipoCombustible;
+    protected double rodadaLlantas;
+
+    public Vehiculo() {
+    }
+
+    public Vehiculo(int numpuertas, String tipoCombustible, double rodadaLlantas) {
+        this.numpuertas = numpuertas;
+        this.tipoCombustible = tipoCombustible;
+        this.rodadaLlantas = rodadaLlantas;
+    }
+
+    public int getNumpuertas() {
+        return numpuertas;
+    }
+
+    public void setNumpuertas(int numpuertas) {
+        this.numpuertas = numpuertas;
+    }
+
+    public String getTipoCombustible() {
+        return tipoCombustible;
+    }
+
+    public void setTipoCombustible(String tipoCombustible) {
+        this.tipoCombustible = tipoCombustible;
+    }
+
+    public double getRodadaLlantas() {
+        return rodadaLlantas;
+    }
+
+    public void setRodadaLlantas(double rodadaLlantas) {
+        this.rodadaLlantas = rodadaLlantas;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "numpuertas=" + numpuertas +
+                ", tipoCombustible='" + tipoCombustible + '\'' +
+                ", rodadaLlantas=" + rodadaLlantas +
+                '}';
+    }
+
+    public void cambioVel(){
+        int velocidad = (int) (Math.random()*201);
+        System.out.println("Cambiando velocidad a "+velocidad+" km/h");
+    }
+    public void encender(){
+        int num = (int) (Math.random()*11);
+        if (num<=5){
+            System.out.println("Encendido");
+        }else{
+            System.out.println("No se ha encendido, intente de nuevo");
+        }
+    }
+}
