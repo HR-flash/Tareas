@@ -1,0 +1,30 @@
+import java.awt.*;
+
+public class DriverHerencia {
+    public static void main(String[] args) {
+
+        //VEHICULO
+        System.out.println("--------------------------VEHICULO--------------------------");
+        Vehiculo vehi = new Vehiculo(4,"Magna",12.5);
+        System.out.println(vehi);
+        System.out.println("El vehiculo se va a encender");
+        vehi.encender();
+        System.out.println("Si el "+vehi+" se encendio, el esta cambiando de velocidad");
+        vehi.cambioVel();
+        System.out.println("Viene otro cambio de velocidad");
+        vehi.cambioVel();
+
+
+        //AUTOMOVIL
+        System.out.println("\n--------------------------AUTOMOVIL--------------------------");
+        Automovil auto = new Automovil(4,"MAGNA",12.5,"VMW",88, Color.LIGHT_GRAY);
+        System.out.println(auto);
+        auto.porcentCombus();
+        auto.acelerar();
+
+
+        //TAXI
+        System.out.println("\n--------------------------TAXI--------------------------");
+
+    }
+}
