@@ -29,8 +29,6 @@ public class DriverHerencia {
         System.out.println(tax);
         tax.Tarifa();
         tax.Disponibilidad();
-
-
-
+        
     }
 }
