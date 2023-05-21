@@ -1,0 +1,9 @@
+import org.example.controlador.ControladorLibro;
+import org.example.vista.VentanaLibro;
+
+public class MainVentanaLibro {
+    public static void main(String[] args) {
+        VentanaLibro ventana = new VentanaLibro("MVC y LDBC");
+        ControladorLibro controller = new ControladorLibro(ventana);
+    }
+}
