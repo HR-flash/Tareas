@@ -70,7 +70,7 @@ public class ModeloTablaLibro implements TableModel {
             case 1:
                 return  tmp.getTitulo();
             case 2:
-                return  tmp.getTitulo();
+                return  tmp.getAutor();
 
         }
         return null;
