@@ -1,1 +1,10 @@
-m
+import Extra.JOptionPane.Controlador.ControladorEjemplo;
+import Extra.JOptionPane.vista.Ventana;
+
+public class Main {
+    public static void main(String[] args) {
+        Ventana ventana= new Ventana("Ejemplo JOptionPane");
+        ControladorEjemplo controler = new ControladorEjemplo(ventana);
+    }
+
+}
